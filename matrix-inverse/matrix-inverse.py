@@ -7,7 +7,7 @@ def matrix_inverse(A):
     
     arr = np.array(A)
 
-    if np.linalg.det(arr) == 0:
+    if np.linalg.det(arr) == 0: # Checking for singularity.
        return
 
     A_inverse = np.linalg.inv(arr)
