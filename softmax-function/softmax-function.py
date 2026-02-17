@@ -12,22 +12,19 @@ def softmax(x):
   
     submission = np.zeros(shape)
     
-    if dims == 1:
+    if dims == 1:  # 1-D Case
       num = np.exp(x - np.max(x))
       denom = np.sum( np.exp(x - np.max(x)) )
 
       for i in range(shape[0]):
         submission[i] = num[i] / denom
 
-
-    else: 
-
+    else:  # 2-D Case
       for i in range(shape[0]):
         num = np.exp(x[i,:] - np.max(x[i,:]))
         denom = np.sum( np.exp(x[i,:] - np.max(x[i,:])) )
       
         for j in range(shape[1]):
           submission[i,j] =  num[j] / denom
-
 
     return submission      
