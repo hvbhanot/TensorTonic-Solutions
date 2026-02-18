@@ -12,7 +12,7 @@ def normalize_3d(v):
       
     else:  
       norm = np.linalg.norm(v, axis=1)
-      norm[norm == 0] = 1  # Fixing the divide issue for zero vectors
+      norm[norm == 0] = 1  # Fixing the divide issue for zero vectors, avoiding 0/0
       submission = v / norm[:, np.newaxis] 
 
     return submission
