@@ -1,0 +1,18 @@
+import numpy as np
+
+def calculate_eigenvalues(matrix):
+    """
+    Calculate eigenvalues of a square matrix
+    """
+    try:
+        matrix = np.asarray(matrix, dtype=float)
+    except ValueError:
+        return None
+
+    if matrix.ndim != 2:
+        return None
+
+    if matrix.shape[0] != matrix.shape[1]:
+        return None
+
+    return np.linalg.eigvals(matrix)
