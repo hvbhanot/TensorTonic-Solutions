@@ -9,7 +9,7 @@ def covariance_matrix(X):
     
     X = np.asarray(X, dtype=float)
 
-    if X.ndim < 2 or X.shape[0] == 1 :
+    if X.ndim < 2 or X.shape[0] == 1 : # Checks for just one row, if yes we cannot have a cov matrix
       return None
 
     n, _ = X.shape
