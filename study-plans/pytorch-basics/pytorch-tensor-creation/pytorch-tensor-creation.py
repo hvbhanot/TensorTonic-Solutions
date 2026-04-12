@@ -12,4 +12,4 @@ def create_tensor(method, shape, value=0.0):
         return (torch.ones(*shape).tolist())
 
     else:
-        return (torch.full(shape, value).tolist()) # Full accepts the 
+        return (torch.full(shape, value).tolist()) # Full accepts the [] list as shape
