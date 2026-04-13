@@ -20,4 +20,4 @@ def tensor_op(x, y, op):
         return (torch.pow(x,y)).tolist()
 
     else:
-        return torch.maximum(x, y).tolist()
+        return torch.maximum(x, y).tolist() #Computes the element-wise maximum of input and other.
