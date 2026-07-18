@@ -13,7 +13,7 @@ def logistic_regression(X, y, lr=0.01, n_iters=1000):
     W = np.zeros((m,))
     b = 0.0
 
-    for iter in range(n_iters):
+    for i in range(n_iters):
 
         z = X @ W + b
         yhat = np.where(z >= 0,
