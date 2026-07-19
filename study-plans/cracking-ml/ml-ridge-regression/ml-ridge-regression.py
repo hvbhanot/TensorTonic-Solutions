@@ -19,6 +19,6 @@ def ridge_regression(X, y, lr, epochs, alpha):
         w -= lr * dw
         b -= lr * db
 
-    weights = [round(float(v), 4) for v in w]
+    weights = [round(float(v), 4) for v in w] # The question asked to round it.
     bias = round(float(b), 4)
     return (weights, bias)
