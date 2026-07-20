@@ -18,5 +18,4 @@ def regression_metrics(y_true, y_pred):
 
     output =  {"mse": round(mse,4), "mae": round(mae,4), "r2": round(r_2,4)}
 
-
     return output
