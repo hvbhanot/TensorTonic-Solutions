@@ -4,5 +4,9 @@ def perms_and_combs(n, r):
     """
     Returns: [permutations, combinations, factorial] as a list.
     """
+    nPr = factorial(n) / factorial(n-r)
 
-    return [perm(n,r), comb(n,r), factorial(n)]
+    nCr = factorial(n) / ( factorial(n-r) * factorial(r))
+
+
+    return [nPr, nCr, factorial(n)]
