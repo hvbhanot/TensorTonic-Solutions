@@ -125,6 +125,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Normal Distribution | Compute the z-score, cumulative probability (CDF), probability density (PDF), and the probability of falling within one standard deviation of the mean. | https://www.tensortonic.com/problems/probstat-normal-distribution |
 | Compute Pearson Correlation Matrix | Compute the complete Pearson correlation matrix across dataset features with stable handling of numeric inputs. | https://www.tensortonic.com/problems/probstat-pearson-correlation |
 | Permutations and Combinations | Compute factorial, permutation, and combination counts for supplied nonnegative integers. | https://www.tensortonic.com/problems/probstat-permutations-combinations |
+| Poisson Distribution | Compute Poisson probabilities, cumulative mass through a cutoff, and the probability of zero events. | https://www.tensortonic.com/problems/probstat-poisson-distribution |
 | Sample Variance & Standard Deviation | Compute unbiased sample variance and standard deviation with Bessel correction for a numeric sample. | https://www.tensortonic.com/problems/probstat-sample-var-std |
 | Activation Functions | Implement four common activation functions from scratch using basic PyTorch tensor operations (no torch.nn module). | https://www.tensortonic.com/problems/pytorch-activation-function-from-scratch |
 | Basic Autograd | Use PyTorch autograd to evaluate a scalar function and return its derivative at every supplied input value. | https://www.tensortonic.com/problems/pytorch-basic-autograd |
